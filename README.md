@@ -4,6 +4,6 @@
 </head>
 <body>
 <h1>Welcome to my personal website.</h1></p>
-<h1>Developmenting is going on.Soon</>
+<h2>Developmenting is going on.</h2>
 </body>
 </html>
