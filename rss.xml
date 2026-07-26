@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Shovon Deb Nobel's Blog</title>
-    <link>https://shovondebnobel.github.io//</link>
-    <description><![CDATA[Stories, updates from Shovon Deb Nobel]]></description>
+    <title>Shovon Deb Nobel</title>
+    <link>https://shovondebnobel.github.io/</link>
+    <description><![CDATA[Stories and updates from Shovon Deb Nobel]]></description>
     <language>en</language>
     
     <atom:link rel="self" href="https://shovondebnobel.github.io/rss.xml" type="application/rss+xml"/>
