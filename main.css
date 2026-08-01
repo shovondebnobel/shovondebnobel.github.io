@@ -1,4 +1,7 @@
-    ::-moz-selection {
+     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+   
+      ::-moz-selection {
         color: #ffffff;
         background: #0096FF;
       }
@@ -8,13 +11,8 @@
         background: #0096FF;
       }
 
-      @font-face {
-        font-family: "Serifa";
-        src: url('assets/Serifa.ttf');
-      }
-
       body {
-        font-family: "Serifa";
+        font-family: "Merriweather";
         background-image: url('background.jpg');
         margin: 0;
         padding: 0;
