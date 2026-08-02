@@ -51,19 +51,20 @@
     </nav>
     <main>
       <section id="cape-town">
+        <h2 class="slide-in-down">Hello, World!</h2>
         <h1 id="intro-head" class="slide-in-down"></h1>
-        <p id="intro-main" class="slide-in-down"></p>
+        <p id="intro-main"></p>
         <div id="about" class="d-block mx-auto mb-4" style="box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); text-align: center; background-color: #FFFFFF; border-radius: 15px; max-width: 400px; margin: 40px; border: 3px solid #FFFFFF; display: flex; justify-content: center; align-items: center;">
           <div style="position: relative; width: 100%; height: 200px;">
             <img class="d-block mx-auto mb-4" src="/assets/cover.jpeg" alt="cover" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -80%); width: 100%; height: auto; object-fit: cover; z-index: 1; margin-top: 10px; margin-bottom: 10px; border: 1px dotted #000000; border-radius: 5px;">
             <img class="d-block mx-auto mb-4" src="/assets/logo.png" alt="profile" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -20%); width: 100px; height: auto; border-radius: 50%; z-index: 2; margin-top: 10px; margin-bottom: 10px; border: 2px solid #FFF;">
           </div>
-          <h2 id="title" class="slide-in-down" style="color: #000d35; text-align: center; margin: 10px 0; font-size: 22px;"></h2>
-          <p id="ipa" class="slide-in-down" style="text-align: center; margin: 0 0 15px 0; font-size: 15px; color: #888; margin-left: 5px;"></p>
-          <p class="slide-in-down" style="color: #000; text-align: center; margin-bottom: 15px;"><span id="desc-line1"></span><br><span id="desc-line2"></span></p>
+          <h2 id="title" style="color: #000d35; text-align: center; margin: 10px 0; font-size: 22px;"></h2>
+          <p id="ipa" style="text-align: center; margin: 0 0 15px 0; font-size: 15px; color: #888; margin-left: 5px;"></p>
+          <p style="color: #000; text-align: center; margin-bottom: 15px;"><span id="desc-line1"></span><br><span id="desc-line2"></span></p>
           <div style="text-align: center; font-size: 16px; background-color: #c9e9f6; color: #000; border-radius: 15px; margin: 15px auto; padding: 15px; width: 300px;">
             </i><strong>Alma mater</strong><br>
-            <p style="color: #000; text-align: center; margin-bottom: 15px;">Hazi Mohammad Mohsin Government High School <span style="opacity: 0.6;">(2018–2024)</span></p>
+            <p class="slide-in-down" style="color: #000; text-align: center; margin-bottom: 15px;">Hazi Mohammad Mohsin Government High School <span style="opacity: 0.6;">(2018–2024)</span></p>
           </div>
         </div>
         <div class="bottom">
@@ -148,7 +149,7 @@
   gsap.registerPlugin(ScrambleTextPlugin);
 
   const scrambleTargets = [
-    { id: "#intro-head", text: "Hi, I am Nobel!", chars: "upperAndLowerCase"},
+    { id: "#intro-head", text: "I am Nobel!", chars: "upperAndLowerCase"},
     { id: "#intro-main", text: "A student from Chittagong, Bangladesh with an interest in drawing and coding.", chars: "upperAndLowerCase"},
     { id: "#title", text: "Shovon Deb Nobel", chars: "upperAndLowerCase"},
     { id: "#ipa", text: "/ʃobʱɔn d̪eb nobel/", chars: "upperAndLowerCase"},
