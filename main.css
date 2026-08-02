@@ -1,6 +1,5 @@
      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
-     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-        
+
       ::-moz-selection {
         color: #ffffff;
         background: #0096FF;
@@ -13,6 +12,7 @@
 
       body {
         font-family: "IBM Plex Sans";
+        text-shadow: 0.5px 0 0 currentColor
         background-image: url('background.jpg');
         margin: 0;
         padding: 0;
