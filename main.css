@@ -1,5 +1,4 @@
-     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-     @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
      @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
         
       ::-moz-selection {
@@ -13,7 +12,7 @@
       }
 
       body {
-        font-family: "Merriweather";
+        font-family: "IBM Plex Sans";
         background-image: url('background.jpg');
         margin: 0;
         padding: 0;
