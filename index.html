@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Shovon Deb Nobel - about me</title>
     <meta name="theme-color" content="#0096FF">
-    <link rel="canonical" href="https://shovondebnobel.github.io/" />
+    <link rel="canonical" href="https://shovondebnobel.github.io"/>
     <meta name="keywords" content="Shovon Deb Nobel, shovondebnobel, শোভন দেব নোবেল">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio and personal website of Shovon Deb Nobel.">
@@ -28,12 +28,9 @@
     <link rel="stylesheet" href="main.css">
     <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/rss.xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrambleTextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -65,10 +62,10 @@
           </div>
           <h2 id="title" style="color: #000d35; text-align: center; margin: 10px 0; font-size: 22px;"></h2>
           <p id="ipa" style="text-align: center; margin: 0 0 15px 0; font-size: 15px; color: #888; margin-left: 5px;"></p>
-          <p style="color: #000; text-align: center; margin-bottom: 15px;"><span id="desc-line1"></span><br><span id="desc-line2"></span></p>
+          <p style="text-align: center; margin-bottom: 15px;"><span id="desc-line1"></span><br><span id="desc-line2"></span></p>
           <div style="text-align: center; font-size: 16px; background-color: #c9e9f6; color: #000; border-radius: 15px; margin: 15px auto; padding: 15px; width: 300px;">
-            <p class="slide-in-down"><strong>Alma mater</strong></p></br>
-            <p class="slide-in-down" style="color: #000; text-align: center; margin-bottom: 15px;">Hazi Mohammad Mohsin Government High School <span style="opacity: 0.6;">(2018–2024)</span></p>
+            <p class="slide-in-down"><strong>Alma mater</strong></p>
+            <p class="slide-in-down" style="color: #000; text-align: center; margin-bottom: 15px;">Hazi Mohammad Mohsin Government High School<span style="opacity: 0.6;"> (2018–2024)</span></p>
           </div>
         </div>
         <div class="bottom">
@@ -86,11 +83,9 @@
             <strong>Social links</strong>
           </p>
           <p>
-            <img src="assets/twitter.png" width="25" alt="Twitter icon">
-            <a href="https://x.com/shovondebnobel" target="_blank">Twitter</a>
+            <img src="assets/twitter.png" width="25" alt="Twitter icon"><a href="https://x.com/shovondebnobel" target="_blank">Twitter</a>
             <br>
-            <img src="assets/linkedin.png" width="25" alt="Linkedin icon">
-            <a href="https://www.linkedin.com/in/shovondebnobel" target="_blank">LinkedIn</a>
+            <img src="assets/linkedin.png" width="25" alt="Linkedin icon"><a href="https://www.linkedin.com/in/shovondebnobel" target="_blank">LinkedIn</a>
           </p>
           <div style="margin-top: 5px;">
            <p><a href="https://orcid.org/0009-0003-3525-7025" target="_blank"><img src="https://orcid.org/assets/vectors/orcid.logo.icon.svg" alt="ORCID" style="width: 25px; height: 25px; margin-right: 4px; vertical-align: middle;">ORCID iD: 0009-0003-3525-7025</a></p>
@@ -156,7 +151,6 @@
     { id: "#desc-line1", text: "Student", chars: "upperAndLowerCase"},
     { id: "#desc-line2", text: "Bakalia Government College", chars: "upperAndLowerCase"}
   ];
-
   function playIntro(){
     const tl = gsap.timeline();
 
@@ -172,12 +166,13 @@
         ease: "none"
       }, t.id.includes("tag") ? "-=0.35" : i === 0 ? 0 : "-=0.4");
     });
-
     tl.from(".replay", { opacity: 0, y: 10, duration: .4 }, "-=0.2");
     return tl;
   }
-
   playIntro();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </body>
 </html>
