@@ -39,22 +39,20 @@
     <link rel="preload" href="assets/cover.png" as="image">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" style="color: #0096FF !important;" href="https://shovondebnobel.github.io/"><img src="https://shovondebnobel.github.io/assets/wordmark.png" alt="wordmark" style="width: auto; height: 40px;"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="https://shovondebnobel.github.io/">About me</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="https://shovondebnobel.github.io/">Achievements</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <nav class="navbar">
+  <a class="navbar-brand" href="https://shovondebnobel.github.io/">
+    <img src="assets/wordmark.png" alt="wordmark" class="wordmark">
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="https://shovondebnobel.github.io/#about">About me</a></li>
+    <li><a href="https://shovondebnobel.github.io/#achievements">Achievements</a></li>
+  </ul>
+</nav>
     <main>
       <section id="cape-town">
         <p class="slide-in-down" style="font-family: 'Roboto Slab'; font-size: 22px;">Hello, World!</p>
