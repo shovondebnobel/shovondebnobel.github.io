@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
 
@@ -15,19 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
       hamburger.setAttribute('aria-expanded', 'false');
     });
   });
-}
 
-gsap.registerPlugin(ScrambleTextPlugin);
+  
+  gsap.registerPlugin(ScrambleTextPlugin);
 
   const scrambleTargets = [
-    { id: "#intro-head", text: "I am Nobel!", chars: "upperAndLowerCase"},
-    { id: "#intro-main", text: "A student from Chittagong, Bangladesh with an interest in drawing and coding.", chars: "upperAndLowerCase"},
-    { id: "#title", text: "Shovon Deb Nobel", chars: "upperAndLowerCase"},
-    { id: "#ipa", text: "/ʃobʱɔn d̪eb nobel/", chars: "upperAndLowerCase"},
-    { id: "#desc-line1", text: "Student", chars: "upperAndLowerCase"},
-    { id: "#desc-line2", text: "Bakalia Government College", chars: "upperAndLowerCase"}
+    { id: "#intro-head", text: "I am Nobel!", chars: "upperAndLowerCase" },
+    { id: "#intro-main", text: "A student from Chittagong, Bangladesh with an interest in drawing and coding.", chars: "upperAndLowerCase" },
+    { id: "#title", text: "Shovon Deb Nobel", chars: "upperAndLowerCase" },
+    { id: "#ipa", text: "/ʃobʱɔn d̪eb nobel/", chars: "upperAndLowerCase" },
+    { id: "#desc-line1", text: "Student", chars: "upperAndLowerCase" },
+    { id: "#desc-line2", text: "Bakalia Government College", chars: "upperAndLowerCase" }
   ];
-  function playIntro(){
+
+  function playIntro() {
     const tl = gsap.timeline();
 
     scrambleTargets.forEach((t, i) => {
@@ -42,12 +45,14 @@ gsap.registerPlugin(ScrambleTextPlugin);
         ease: "none"
       }, t.id.includes("tag") ? "-=0.35" : i === 0 ? 0 : "-=0.4");
     });
+
     tl.from(".replay", { opacity: 0, y: 10, duration: .4 }, "-=0.2");
     return tl;
   }
-playIntro();
 
+  playIntro();
 
+  
   var mail = 'gmail.com';
   mail = 'sdebnobel' + '@' + mail;
 
@@ -69,8 +74,9 @@ playIntro();
       setTimeout(function () {
         btn.querySelector('.icon-copy').style.display = 'inline';
         btn.querySelector('.icon-copied').style.display = 'none';
-      }, 1500);
+      }, 2000);
       e.clearSelection();
     });
   }
+
 });
