@@ -43,6 +43,15 @@
         line-height: 1.6;
       }
 
+      h1,
+      h2 {
+        background: linear-gradient(90deg, #0818A8, #CCCCFF);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+      }
+
       h3,
       h4,
       h5,
