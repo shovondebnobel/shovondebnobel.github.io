@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 gsap.registerPlugin(ScrambleTextPlugin);
 
   const scrambleTargets = [
@@ -28,7 +29,7 @@ gsap.registerPlugin(ScrambleTextPlugin);
   }
 playIntro();
 
-document.addEventListener('DOMContentLoaded', function () {
+
   var mail = 'gmail.com';
   mail = 'sdebnobel' + '@' + mail;
 
