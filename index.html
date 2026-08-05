@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Shovon Deb Nobel - about me</title>
     <meta name="theme-color" content="#0096FF">
-    <link rel="canonical" href="https://shovondebnobel.github.io"/>
+    <link rel="canonical" href="https://shovondebnobel.github.io" />
     <meta name="keywords" content="Shovon Deb Nobel, shovondebnobel, শোভন দেব নোবেল">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio and personal website of Shovon Deb Nobel.">
@@ -26,34 +26,40 @@
     <link rel="icon" href="https://shovondebnobel.github.io/assets/logo.png" />
     <link rel="apple-touch-icon-precomposed" href="https://shovondebnobel.github.io/assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="main.css">
     <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/rss.xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrambleTextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrambleTextPlugin.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="preload" href="background.jpg" as="image">
     <link rel="preload" href="assets/logo.png" as="image">
     <link rel="preload" href="assets/cover.png" as="image">
   </head>
   <body>
     <nav class="navbar">
-  <a class="navbar-brand" href="https://shovondebnobel.github.io/">
-    <img src="assets/wordmark.png" alt="wordmark" class="wordmark">
-  </a>
-  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="https://shovondebnobel.github.io/#about">About me</a></li>
-    <li><a href="https://shovondebnobel.github.io/#achievements">Achievements</a></li>
-    <li><a href="https://shovondebnobel.github.io/#contactPanel">Get in touch</a></li>
-  </ul>
-</nav>
+      <a class="navbar-brand" href="https://shovondebnobel.github.io/">
+        <img src="assets/wordmark.png" alt="wordmark" class="wordmark">
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="https://shovondebnobel.github.io/#about">About me</a>
+        </li>
+        <li>
+          <a href="https://shovondebnobel.github.io/#achievements">Achievements</a>
+        </li>
+        <li>
+          <a href="https://shovondebnobel.github.io/#contactPanel">Get in touch</a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <section id="cape-town">
         <p class="slide-in-down" style="font-family: 'Roboto Slab'; font-size: 22px;">Hello, World!</p>
@@ -66,61 +72,63 @@
           </div>
           <h2 id="title"></h2>
           <p id="ipa"></p>
-          <p style="text-align: center; margin-bottom: 15px;"><span id="desc-line1"></span><br><span id="desc-line2"></span></p>
+          <p style="text-align: center; margin-bottom: 15px;">
+            <span id="desc-line1"></span>
+            <br>
+            <span id="desc-line2"></span>
+          </p>
           <div id="second-box">
-            <p class="slide-in-down"><strong>Alma mater</strong></p>
-            <p class="slide-in-down" style="text-align: center; margin-bottom: 15px;">Hazi Mohammad Mohsin Government High School<span style="opacity: 0.6;"> (2018–2024)</span></p>
+            <p class="slide-in-down">
+              <strong>Alma mater</strong>
+            </p>
+            <p class="slide-in-down" style="text-align: center; margin-bottom: 15px;">Hazi Mohammad Mohsin Government High School <span style="opacity: 0.6;"> (2018–2024)</span>
+            </p>
           </div>
         </div>
         <div class="bottom">
           <div class="contact-wrap">
-    <button class="contact-toggle" id="contactToggle" aria-expanded="false" aria-controls="contactPanel">
-        <span>Contact me</span>
-        <i class="fa-solid fa-chevron-down toggle-icon"></i>
-    </button>
-
-    <div class="contact-panel" id="contactPanel">
-        <div class="container">
-            <form id="contactForm" action="https://api.staticforms.dev/submit" method="POST">
-                <input type="hidden" name="apiKey" value="sf_64e8a01e85333bfd66edbe92">
-                <input type="hidden" name="subject" value="New message from website">
-                <input type="hidden" name="replyTo" value="@">
-
-                <div class="form-group">
-                    <label for="name">Name <span class="required">*</span></label>
+            <button class="contact-toggle" id="contactToggle" aria-expanded="false" aria-controls="contactPanel">
+              <span>Contact me</span>
+              <i class="fa-solid fa-chevron-down toggle-icon"></i>
+            </button>
+            <div class="contact-panel" id="contactPanel">
+              <div class="container">
+                <form id="contactForm" action="https://api.staticforms.dev/submit" method="POST">
+                  <input type="hidden" name="apiKey" value="sf_64e8a01e85333bfd66edbe92">
+                  <input type="hidden" name="subject" value="New message from website">
+                  <input type="hidden" name="replyTo" value="@">
+                  <div class="form-group">
+                    <label for="name">Name <span class="required">*</span>
+                    </label>
                     <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email <span class="required">*</span></label>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email <span class="required">*</span>
+                    </label>
                     <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="formSubject">Subject <span class="required">*</span></label>
+                  </div>
+                  <div class="form-group">
+                    <label for="formSubject">Subject <span class="required">*</span>
+                    </label>
                     <input type="text" id="formSubject" name="messageSubject" placeholder="Summary of your message" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message <span class="required">*</span></label>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message <span class="required">*</span>
+                    </label>
                     <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
-                </div>
-
-                <div class="honeypot-1" aria-hidden="true">
+                  </div>
+                  <div class="honeypot-1" aria-hidden="true">
                     <label for="honeypot"></label>
                     <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
-                </div>
-
-                <button type="submit" id="submitBtn"><i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>Send</button>
-
-                <div id="responseMessage" class="message"></div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<script src="https://www.staticforms.dev/scripts/staticforms.js" defer></script>
-        
+                  </div>
+                  <button type="submit" id="submitBtn">
+                    <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>Send </button>
+                  <div id="responseMessage" class="message"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <script src="https://www.staticforms.dev/scripts/staticforms.js" defer></script>
           <p>
             <strong>Profiles</strong>
           </p>
@@ -142,59 +150,60 @@
             <a href="https://www.linkedin.com/in/shovondebnobel" target="_blank">LinkedIn</a>
           </p>
           <div style="margin-top: 5px;">
-           <p><a href="https://orcid.org/0009-0003-3525-7025" target="_blank"><img src="https://orcid.org/assets/vectors/orcid.logo.icon.svg" alt="ORCID" style="width: 25px; height: 25px; margin-right: 4px; vertical-align: middle;">ORCID iD: 0009-0003-3525-7025</a></p>
-           <p><a href="https://shovondebnobel.github.io/rss.xml" target="_blank"><i class="fa-solid fa-square-rss" style="color: #000d33;"></i>RSS</a></p>
-           <span id="emailContainer">
-             <i class="fa-solid fa-envelope" style="color: #000d35;"></i>
+            <p>
+              <a href="https://orcid.org/0009-0003-3525-7025" target="_blank">
+                <img src="https://orcid.org/assets/vectors/orcid.logo.icon.svg" alt="ORCID" style="width: 25px; height: 25px; margin-right: 4px; vertical-align: middle;">ORCID iD: 0009-0003-3525-7025 </a>
+            </p>
+            <p>
+              <a href="https://shovondebnobel.github.io/rss.xml" target="_blank">
+                <i class="fa-solid fa-square-rss" style="color: #000d33;"></i>RSS </a>
+            </p>
+            <span id="emailContainer">
+              <i class="fa-solid fa-envelope" style="color: #000d35;"></i>
             </span>
             <hr>
-            <p id="copyright">Copyright &copy;2021–<script>document.write(Math.max(2026, new Date().getFullYear()));</script> Shovon Deb Nobel. All Rights Reserved.</p>
+            <p id="copyright">Copyright &copy;2021– <script>
+                document.write(Math.max(2026, new Date().getFullYear()));
+              </script> Shovon Deb Nobel. All Rights Reserved. </p>
           </div>
         </div>
       </section>
     </main>
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://shovondebnobel.github.io/#website",
-      "url": "https://shovondebnobel.github.io/",
-      "name": "Shovon Deb Nobel",
-      "description": "Portfolio and personal website of Shovon Deb Nobel",
-      "inLanguage": "en",
-      "publisher": {
-        "@id": "https://shovondebnobel.github.io/#about"
-      },
-      "about": {
-        "@id": "https://shovondebnobel.github.io/#about"
+      {
+        "@context": "https://schema.org",
+        "@graph": [{
+          "@type": "WebSite",
+          "@id": "https://shovondebnobel.github.io/#website",
+          "url": "https://shovondebnobel.github.io/",
+          "name": "Shovon Deb Nobel",
+          "description": "Portfolio and personal website of Shovon Deb Nobel",
+          "inLanguage": "en",
+          "publisher": {
+            "@id": "https://shovondebnobel.github.io/#about"
+          },
+          "about": {
+            "@id": "https://shovondebnobel.github.io/#about"
+          }
+        }, {
+          "@type": "WebPage",
+          "@id": "https://shovondebnobel.github.io/index.html",
+          "url": "https://shovondebnobel.github.io/",
+          "name": "Shovon Deb Nobel",
+          "description": "Portfolio and personal website of Shovon Deb Nobel.",
+          "inLanguage": "en"
+        }, {
+          "@type": "Person",
+          "@id": "https://shovondebnobel.github.io/#about",
+          "name": "Shovon Deb Nobel",
+          "url": "https://shovondebnobel.github.io/",
+          "image": "https://shovondebnobel.github.io/assets/logo.png",
+          "sameAs": ["https://www.linkedin.com/in/shovondebnobel", "https://twitter.com/shovondebnobel"]
+        }]
       }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://shovondebnobel.github.io/index.html",
-      "url": "https://shovondebnobel.github.io/",
-      "name": "Shovon Deb Nobel",
-      "description": "Portfolio and personal website of Shovon Deb Nobel.",
-      "inLanguage": "en"
-    },
-    {
-      "@type": "Person",
-      "@id": "https://shovondebnobel.github.io/#about",
-      "name": "Shovon Deb Nobel",
-      "url": "https://shovondebnobel.github.io/",
-      "image": "https://shovondebnobel.github.io/assets/logo.png",
-      "sameAs": [
-        "https://www.linkedin.com/in/shovondebnobel",
-        "https://twitter.com/shovondebnobel"
-      ]
-    }
-  ]
-}
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-</body>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  </body>
 </html>
