@@ -267,8 +267,8 @@
      }
      .contact-wrap {
         max-width: 500px;
-        margin: 0 auto;
         margin-top: 10px;
+        margin-bottom: 10px
     }
 
     .contact-toggle {
@@ -289,7 +289,7 @@
     }
 
     .contact-toggle.open {
-        border-radius: 20px 20px 0 0;
+        border-radius: 15px 20px 0 0;
     }
 
     .toggle-icon {
@@ -309,7 +309,7 @@
         transition: max-height 0.4s ease;
         background: white;
         border-radius: 0 0 15px 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         margin-bottom: 10px;
         
     }
