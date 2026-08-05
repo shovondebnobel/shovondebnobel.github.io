@@ -1,4 +1,5 @@
      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
 
       ::-moz-selection {
         color: #ffffff;
@@ -11,7 +12,7 @@
       }
 
       body {
-        font-family: "IBM Plex Sans";
+        font-family: "IBM Plex Sans", "Baloo Da 2";
         background-image: url('background.jpg');
         margin: 0;
         padding: 0;
@@ -276,7 +277,7 @@
         align-items: center;
         background: white;
         border: none;
-        border-radius: 20px;
+        border-radius: 15px;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         padding: 12px 20px;
         cursor: pointer;
@@ -307,7 +308,7 @@
         transition: max-height 0.4s ease;
         background: white;
         border-radius: 0 0 20px 20px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
 
     .contact-panel.open {
