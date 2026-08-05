@@ -156,8 +156,8 @@
     align-items: center;
     gap: 0;
     background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     max-height: 0;
     overflow: hidden;
@@ -309,7 +309,6 @@
         transition: max-height 0.4s ease;
         background: white;
         border-radius: 0 0 15px 20px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         margin-bottom: 10px;
         
     }
