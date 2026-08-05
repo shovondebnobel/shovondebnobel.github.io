@@ -95,19 +95,19 @@ document.addEventListener('DOMContentLoaded', function () {
     StaticForms.attach(form, {
       onBeforeSubmit: function () {
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
+        submitBtn.textContent = 'Processing...';
         responseMessage.className = 'message';
       },
       onSuccess: function () {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
+        submitBtn.textContent = 'Send again';
         responseMessage.textContent = 'Your message has been sent.';
         responseMessage.className = 'message success show';
         form.reset();
       },
       onError: function (error) {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
+        submitBtn.textContent = 'Send again';
         responseMessage.textContent = 'Something went wrong. Please try again.';
         responseMessage.className = 'message error show';
       }
