@@ -51,6 +51,7 @@
   <ul class="nav-links" id="navLinks">
     <li><a href="https://shovondebnobel.github.io/#about">About me</a></li>
     <li><a href="https://shovondebnobel.github.io/#achievements">Achievements</a></li>
+    <li><a href="https://shovondebnobel.github.io/#contactPanel">Get in touch</a></li>
   </ul>
 </nav>
     <main>
@@ -70,6 +71,53 @@
             <p class="slide-in-down"><strong>Alma mater</strong></p>
             <p class="slide-in-down" style="color: #000; text-align: center; margin-bottom: 15px;">Hazi Mohammad Mohsin Government High School<span style="opacity: 0.6;"> (2018–2024)</span></p>
           </div>
+          <div class="contact-wrap">
+    <button class="contact-toggle" id="contactToggle" aria-expanded="false" aria-controls="contactPanel">
+        <span>Contact me</span>
+        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+    </button>
+
+    <div class="contact-panel" id="contactPanel">
+        <div class="container">
+            <form id="contactForm" action="https://api.staticforms.dev/submit" method="POST">
+                <input type="hidden" name="apiKey" value="sf_64e8a01e85333bfd66edbe92">
+                <input type="hidden" name="subject" value="New message from portfolio site">
+                <input type="hidden" name="replyTo" value="@">
+
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="formSubject">Subject <span class="required">*</span></label>
+                    <input type="text" id="formSubject" name="messageSubject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="honeypot-1" aria-hidden="true">
+                    <label for="honeypot"></label>
+                    <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+                </div>
+
+                <button type="submit" id="submitBtn">Send message</button>
+
+                <div id="responseMessage" class="message"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.staticforms.dev/scripts/staticforms.js" defer></script>
         </div>
         <div class="bottom">
           <p>
