@@ -80,3 +80,37 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 });
+var contactToggle = document.getElementById('contactToggle');
+        var contactPanel = document.getElementById('contactPanel');
+
+        contactToggle.addEventListener('click', function () {
+            var isOpen = contactPanel.classList.toggle('open');
+            contactToggle.classList.toggle('open');
+            contactToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        var form = document.getElementById('contactForm');
+        var submitBtn = document.getElementById('submitBtn');
+        var responseMessage = document.getElementById('responseMessage');
+
+        StaticForms.attach(form, {
+            onBeforeSubmit: function () {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+                responseMessage.className = 'message';
+            },
+            onSuccess: function () {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+                responseMessage.textContent = 'Thanks! Your message has been sent.';
+                responseMessage.className = 'message success show';
+                form.reset();
+            },
+            onError: function (error) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+                responseMessage.textContent = 'Something went wrong. Please try again.';
+                responseMessage.className = 'message error show';
+            }
+        });
+    });
