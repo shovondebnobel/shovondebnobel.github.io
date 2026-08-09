@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
   gsap.registerPlugin(ScrambleTextPlugin);
 
   const scrambleTargets = [
-    { id: "#intro-head", text: "I am Nobel!", chars: "upperAndLowerCase" },
+    { id: "#intro-head", text: "Hi! I am Nobel", chars: "upperAndLowerCase" },
     { id: "#intro-main", text: "A student from Chittagong, Bangladesh with an interest in drawing and coding.", chars: "upperAndLowerCase" },
     { id: "#title", text: "Shovon Deb Nobel", chars: "upperAndLowerCase" },
     { id: "#ipa", text: "/ʃobʱɔn d̪eb nobel/", chars: "upperAndLowerCase" },
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
           text: t.text,
           chars: t.chars,
           revealDelay: 0.2,
-          speed: 0.2
+          speed: 0.1
         },
         ease: "none"
       }, t.id.includes("tag") ? "-=0.35" : i === 0 ? 0 : "-=0.4");
