@@ -45,13 +45,26 @@ p {
 
 h1,
 h2 {
-  background: linear-gradient(90deg, #000d35, #CCCCFF);
+  background: linear-gradient(90deg, #000d35, #CCCCFF, #06b6d4, #000d35);
+  background-size: 300% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  animation: gradientFlow 6s ease infinite;
 }
 
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 h3,
 h4,
 h5,
