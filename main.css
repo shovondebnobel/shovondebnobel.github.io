@@ -252,8 +252,6 @@ hr {
   color: #888;
   margin-left: 5px;
 }
-
-/* ---------- About / intro card: soft blue dotted border ---------- */
 #about {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -261,7 +259,7 @@ hr {
   border-radius: 15px;
   max-width: 400px;
   margin: 40px;
-  border: 2px dotted #a8d5f2;
+  border: 3px dotted #a8d5f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,21 +281,18 @@ hr {
   font-size: 14px;
   opacity: 0.6;
 }
-
-/* ---------- Contact accordion ---------- */
 .contact-wrap {
   max-width: 500px;
   margin-top: 10px;
   margin-bottom: 10px
 }
-
 .contact-toggle {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
-  border: 2px dotted #a8d5f2;
+  border: 3px dotted #a8d5f2;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   padding: 12px 20px;
@@ -336,7 +331,7 @@ hr {
   background: white;
   border-radius: 0 0 15px 20px;
   margin-bottom: 10px;
-  border: 2px dotted transparent;
+  border: 3px dotted transparent;
   border-top: none;
 }
 
