@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Baloo+Da+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Baloo+Da+2:wght@400..800&display=swap');
 
 ::-moz-selection {
   color: #ffffff;
@@ -40,7 +40,8 @@ p {
 
 h1,
 h2 {
-  font-family: "Montagu Slab";
+  font-family: "Roboto Slab";
+  font-weight: 700;
   background: linear-gradient(90deg, #000d35, #CCCCFF, #06b6d4, #000d35);
   -webkit-background-clip: text;
   background-clip: text;
@@ -483,4 +484,29 @@ button[type="submit"]:disabled {
 }
 .required {
   color: #e74c3c;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+.icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #000d35;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: #06b6d4;
+  transform: translateY(-2px);
+  text-decoration: none;
 }
