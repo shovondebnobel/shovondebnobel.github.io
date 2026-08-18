@@ -42,7 +42,7 @@ h1,
 h2 {
   font-family: "Roboto Slab";
   font-weight: 700;
-  background: linear-gradient(90deg, #000d35, #CCCCFF, #06b6d4, #000d35);
+  background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
