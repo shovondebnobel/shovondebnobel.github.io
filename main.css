@@ -12,7 +12,12 @@
 
 body {
   font-family: "IBM Plex Sans", "Baloo Da 2";
-  background-image: url('background.jpg');
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(ellipse 60% 30% at 50% 0%, rgba(6, 182, 212, 0.3), transparent 70%),
+    radial-gradient(ellipse 60% 30% at 50% 100%, rgba(6, 182, 212, 0.3), transparent 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
 }
