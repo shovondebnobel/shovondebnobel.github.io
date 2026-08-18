@@ -488,12 +488,10 @@ button[type="submit"]:disabled {
 .social-icons {
   display: flex;
   gap: 10px;
-  justify-content: center;
   margin: 10px 0;
 }
 .icon-btn {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
