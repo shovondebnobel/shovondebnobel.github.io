@@ -18,7 +18,6 @@ body {
 }
 
 h1 {
-  font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1.2;
@@ -31,7 +30,6 @@ section {
 }
 
 h2 {
-  font-family: "Roboto Slab";
   font-weight: 700;
   line-height: 1.25;
   font-size: 2rem;
@@ -44,6 +42,7 @@ p {
 
 h1,
 h2 {
+  font-family: "Montagu Slab";
   background: linear-gradient(90deg, #000d35, #CCCCFF, #06b6d4, #000d35);
   -webkit-background-clip: text;
   background-clip: text;
@@ -54,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Slab";
+  font-family: "Montagu Slab";
   font-weight: 700;
 }
 i,
