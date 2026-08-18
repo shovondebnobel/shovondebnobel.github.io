@@ -510,3 +510,34 @@ button[type="submit"]:disabled {
   transform: translateY(-2px);
   text-decoration: none;
 }
+.email-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 8px 14px;
+  color: #000d35;
+  font-size: 14px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.email-box:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.email-box a {
+  color: #000d35;
+  text-decoration: none;
+}
+
+.email-box .copy-btn {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  }
