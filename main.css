@@ -46,24 +46,6 @@ p {
 h1,
 h2 {
   background: linear-gradient(90deg, #000d35, #CCCCFF, #06b6d4, #000d35);
-  background-size: 300% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  animation: gradientFlow 6s ease infinite;
-}
-
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 h3,
 h4,
@@ -151,7 +133,7 @@ b {
 }
 
 .nav-links a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
   text-decoration: none;
 }
 
@@ -248,10 +230,19 @@ hr {
   border-top: 2px dashed #000435;
 }
 #main-box {
-  position: relative; width: 100%; height: 200px;
+  position: relative; 
+  width: 100%; 
+  height: 200px;
 }
 #second-box {
-  text-align: center; font-size: 16px; background-color: #c9e9f6; color: #000; border-radius: 15px; margin: 15px auto; padding: 15px; width: 300px;
+  text-align: center; 
+  font-size: 16px; 
+  background-color: #c9e9f6; 
+  color: #000; 
+  border-radius: 15px; 
+  margin: 15px auto; 
+  padding: 15px; 
+  width: 300px;
 }
 #title {
   text-align: center;
@@ -272,7 +263,6 @@ hr {
   border-radius: 15px;
   max-width: 400px;
   margin: 40px;
-  border: 2px dashed #a8d5f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,7 +315,6 @@ hr {
   justify-content: space-between;
   align-items: center;
   background: white;
-  border: 2px dashed #a8d5f2;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   padding: 12px 20px;
