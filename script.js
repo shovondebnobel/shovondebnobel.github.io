@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var container = document.getElementById('emailContainer');
   if (container) {
+    container.classList.add('email-box');
     container.insertAdjacentHTML('beforeend',
       '<a href="mailto:' + mail + '">' + mail + '</a>' +
       '<button id="copyBtn" class="copy-btn" data-clipboard-text="' + mail + '" title="Copy email">' +
