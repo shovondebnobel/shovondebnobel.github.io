@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montagu+Slab:opsz,wght@16..144,100..700&family=Baloo+Da+2:wght@400..800&display=swap');
 
 ::-moz-selection {
   color: #ffffff;
@@ -46,6 +45,10 @@ p {
 h1,
 h2 {
   background: linear-gradient(90deg, #000d35, #CCCCFF, #06b6d4, #000d35);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 h3,
 h4,
@@ -233,12 +236,14 @@ hr {
   position: relative; 
   width: 100%; 
   height: 200px;
+  border: none;
 }
 #second-box {
   text-align: center; 
   font-size: 16px; 
   background-color: #c9e9f6; 
-  color: #000; 
+  color: #000;
+  border: none;
   border-radius: 15px; 
   margin: 15px auto; 
   padding: 15px; 
@@ -353,8 +358,8 @@ hr {
   background: white;
   border-radius: 0 0 15px 20px;
   margin-bottom: 10px;
-  border: 2px dashed transparent;
   border-top: none;
+  border: none;
 }
 
 .contact-panel.open {
@@ -386,7 +391,6 @@ textarea {
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   font-size: 14px;
-  font-family: inherit;
   transition: all 0.3s ease;
   background: #f8f9fa;
 }
