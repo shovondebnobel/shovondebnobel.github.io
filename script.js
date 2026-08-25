@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const scrambleTargets = [
     { id: "#intro-head", text: "Hi! I am Nobel", chars: "upperAndLowerCase" },
-    { id: "#intro-main", text: "A student from Chittagong, Bangladesh with an interest in drawing and coding.", chars: "upperAndLowerCase" },
+    { id: "#intro-main", text: "Born and raised in Chittagong, Bangladesh, a student with an interest in design and coding.", chars: "upperAndLowerCase" },
     { id: "#title", text: "Shovon Deb Nobel", chars: "upperAndLowerCase" },
     { id: "#ipa", text: "/ʃobʱɔn d̪eb nobel/", chars: "upperAndLowerCase" },
     { id: "#desc-line1", text: "Student", chars: "upperAndLowerCase" },
