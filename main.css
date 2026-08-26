@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Baloo+Da+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Baloo+Da+2:wght@400..800&display=swap');
 
 ::-moz-selection {
   color: #ffffff;
@@ -361,7 +361,7 @@ hr {
 .contact-panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease,
+  transition: max-height 0.4s ease;
   background: white;
   border-radius: 0 0 15px 20px;
   margin-bottom: 10px;
@@ -547,4 +547,18 @@ button[type="submit"]:disabled {
   padding: 0;
   display: flex;
   align-items: center;
+}
+.profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.profile-row img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
 }
