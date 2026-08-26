@@ -25,7 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     { id: "#title", text: "Shovon Deb Nobel", chars: "upperAndLowerCase" },
     { id: "#ipa", text: "/ʃobʱɔn d̪eb nobel/", chars: "upperAndLowerCase" },
     { id: "#desc-line1", text: "Student", chars: "upperAndLowerCase" },
-    { id: "#desc-line2", text: "Bakalia Government College", chars: "upperAndLowerCase" }
+    { id: "#desc-line2", text: "Bakalia Government College", chars: "upperAndLowerCase" },
+    { id: "#desc-line3", text: "Hazi Mohammad Mohsin Government High School", chars: "upperAndLowerCase" },
+    { id: "#desc-line4", text: "(2018–2024)", chars: "upperAndLowerCase" }
   ];
 
   function playIntro() {
