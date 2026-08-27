@@ -1,4 +1,35 @@
 document.addEventListener('DOMContentLoaded', function () {
+  
+  var themeToggle = document.getElementById('themeToggle');
+  var themeIcon = document.getElementById('themeIcon');
+  var htmlEl = document.documentElement;
+
+  var savedTheme = localStorage.getItem('theme');
+  var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+  if (initialTheme === 'dark') {
+    htmlEl.setAttribute('data-theme', 'dark');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var isDark = htmlEl.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        htmlEl.removeAttribute('data-theme');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+      } else {
+        htmlEl.setAttribute('data-theme', 'dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  }
 
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
