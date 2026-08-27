@@ -3,18 +3,59 @@
 :root {
   --font-sans: "Inter", "Baloo Da 2", sans-serif;
   --font-heading: "Roboto Slab", serif;
+
   --text-sm: 14px;
   --text-base: 18px;
   --text-lg: 20px;
+
   --heading-xl: 40px;
   --heading-lg: 32px;
   --heading-md: 22px;
+
   --leading-tight: 1.2;
   --leading-body: 1.6;
+
   --color-navy: #000d35;
   --color-navy-alt: #000435;
   --color-accent: #06b6d4;
-  --color-white: #ffffff;
+
+  --bg-page: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-alt: #c9e9f6;
+  --bg-navbar: rgba(255, 255, 255, 0.35);
+  --bg-navbar-mobile: rgba(255, 255, 255, 0.55);
+  --bg-glass: rgba(255, 255, 255, 0.35);
+  --bg-glass-hover: rgba(255, 255, 255, 0.5);
+  --border-glass: rgba(255, 255, 255, 0.4);
+  --text-primary: #000d35;
+  --text-body: #333333;
+  --text-muted: #888888;
+  --input-bg: #f8f9fa;
+  --input-border: #e0e0e0;
+  --glow-opacity: 0.3;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --color-navy: #e8ecf7;
+  --color-navy-alt: #dfe4f0;
+  --color-accent: #22d3ee;
+
+  --bg-page: #0b1120;
+  --bg-card: #131a2c;
+  --bg-card-alt: #16233a;
+  --bg-navbar: rgba(19, 26, 44, 0.55);
+  --bg-navbar-mobile: rgba(19, 26, 44, 0.75);
+  --bg-glass: rgba(255, 255, 255, 0.08);
+  --bg-glass-hover: rgba(255, 255, 255, 0.14);
+  --border-glass: rgba(255, 255, 255, 0.12);
+  --text-primary: #e8ecf7;
+  --text-body: #b8c0d4;
+  --text-muted: #7c8aa8;
+  --input-bg: #1a2338;
+  --input-border: #2a3550;
+  --glow-opacity: 0.18;
+  --shadow-color: rgba(0, 0, 0, 0.35);
 }
 
 html, body {
@@ -34,14 +75,15 @@ html, body {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-white);
+  background-color: var(--bg-page);
   background-image:
-    radial-gradient(ellipse 60% 30% at 50% 0%, rgba(6, 182, 212, 0.3), transparent 70%),
-    radial-gradient(ellipse 60% 30% at 50% 100%, rgba(6, 182, 212, 0.3), transparent 70%);
+    radial-gradient(ellipse 60% 30% at 50% 0%, rgba(6, 182, 212, var(--glow-opacity)), transparent 70%),
+    radial-gradient(ellipse 60% 30% at 50% 100%, rgba(6, 182, 212, var(--glow-opacity)), transparent 70%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease;
 }
 
 h1 {
@@ -63,6 +105,7 @@ h2 {
 p {
   font-size: var(--text-base);
   line-height: var(--leading-body);
+  color: var(--text-body);
 }
 
 h1,
@@ -81,6 +124,7 @@ h5,
 h6 {
   font-family: var(--font-heading);
   font-weight: 600;
+  color: var(--text-primary);
 }
 i,
 b {
@@ -96,17 +140,38 @@ b {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.35);
+  background: var(--bg-navbar);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid var(--border-glass);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .wordmark {
   width: auto;
   height: 40px;
   display: block;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: var(--bg-glass);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-glass-hover);
+  transform: scale(1.08);
 }
 
 .hamburger {
@@ -128,7 +193,7 @@ b {
   width: 100%;
   background: var(--color-navy);
   border-radius: 3px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s ease;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -157,7 +222,7 @@ b {
   color: var(--color-navy);
   text-decoration: none;
   padding: 6px 10px;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -178,14 +243,14 @@ b {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    background: rgba(255, 255, 255, 0.55);
+    background: var(--bg-navbar-mobile);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid var(--border-glass);
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.35s ease, opacity 0.3s ease;
+    transition: max-height 0.35s ease, opacity 0.3s ease, background 0.3s ease;
   }
 
   .nav-links.open {
@@ -220,7 +285,7 @@ svg {
   opacity: 0.7;
 }
 .icon-copied {
-  color: blue;
+  color: var(--color-accent);
 }
 
 a {
@@ -249,42 +314,45 @@ hr {
 #second-box {
   text-align: center;
   font-size: var(--text-base);
-  background-color: #c9e9f6;
+  background-color: var(--bg-card-alt);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  color: #000;
+  color: var(--text-primary);
   border: none;
   border-radius: 15px;
   margin: 15px auto;
   margin-bottom: 10px;
   padding: 15px;
   width: 300px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 #title {
   text-align: center;
   margin: 10px 0;
   font-size: var(--heading-md);
+  color: var(--text-primary);
 }
 #ipa {
   text-align: center;
   margin: 0 0 15px 0;
   font-size: var(--text-sm);
-  color: #888;
+  color: var(--text-muted);
   margin-left: 5px;
 }
 #about {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px var(--shadow-color);
   text-align: center;
-  background-color: var(--color-white);
+  background-color: var(--bg-card);
   border-radius: 15px;
   max-width: 400px;
   width: 90%;
   margin: 40px auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 #about:hover {
@@ -321,6 +389,7 @@ hr {
 #copyright {
   font-size: var(--text-sm);
   opacity: 0.6;
+  color: var(--text-body);
 }
 .contact-wrap {
   max-width: 500px;
@@ -333,15 +402,15 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: var(--bg-card);
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px var(--shadow-color);
   padding: 12px 20px;
   cursor: pointer;
   font-weight: 700;
   font-size: var(--text-lg);
-  color: var(--color-navy);
-  transition: border-radius 0.3s ease;
+  color: var(--text-primary);
+  transition: border-radius 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-toggle.open {
@@ -350,8 +419,8 @@ hr {
 
 .toggle-icon {
   font-size: var(--text-sm);
-  color: var(--color-navy);
-  transition: transform 0.3s ease;
+  color: var(--text-primary);
+  transition: transform 0.3s ease, color 0.3s ease;
   line-height: 1;
 }
 
@@ -362,8 +431,8 @@ hr {
 .contact-panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
-  background: white;
+  transition: max-height 0.4s ease, background-color 0.3s ease;
+  background: var(--bg-card);
   border-radius: 0 0 15px 20px;
   margin-bottom: 10px;
   border: none;
@@ -384,7 +453,7 @@ hr {
 label {
   display: block;
   margin-bottom: 8px;
-  color: #333;
+  color: var(--text-body);
   font-weight: 500;
   font-size: var(--text-sm);
 }
@@ -394,12 +463,13 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 12px 16px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--input-border);
   border-radius: 8px;
   font-size: var(--text-sm);
   font-family: var(--font-sans);
   transition: all 0.3s ease;
-  background: #f8f9fa;
+  background: var(--input-bg);
+  color: var(--text-primary);
 }
 
 input[type="text"]:focus,
@@ -407,7 +477,7 @@ input[type="email"]:focus,
 textarea:focus {
   outline: none;
   border-color: var(--color-accent);
-  background: white;
+  background: var(--bg-card);
 }
 
 textarea {
@@ -431,13 +501,13 @@ button[type="submit"] {
   width: 100%;
   padding: 14px;
   background: var(--color-navy);
-  color: white;
+  color: var(--bg-page);
   border: none;
   border-radius: 8px;
   font-size: var(--text-lg);
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
@@ -506,7 +576,7 @@ button[type="submit"]:disabled {
   height: 40px;
   background: var(--color-navy);
   border-radius: 10px;
-  color: #ffffff;
+  color: var(--bg-page);
   font-size: var(--text-lg);
   text-decoration: none;
   transition: background 0.25s ease, transform 0.2s ease;
@@ -521,24 +591,24 @@ button[type="submit"]:disabled {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.35);
+  background: var(--bg-glass);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--border-glass);
   border-radius: 10px;
   padding: 8px 14px;
-  color: var(--color-navy);
+  color: var(--text-primary);
   font-size: var(--text-sm);
-  transition: background 0.25s ease, transform 0.2s ease;
+  transition: background 0.25s ease, transform 0.2s ease, color 0.3s ease;
 }
 
 .email-box:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--bg-glass-hover);
   transform: translateY(-2px);
 }
 
 .email-box a {
-  color: var(--color-navy);
+  color: var(--text-primary);
   text-decoration: none;
 }
 
@@ -555,6 +625,10 @@ button[type="submit"]:disabled {
   gap: 14px;
   margin: 10px 0;
   font-size: var(--text-sm);
+}
+
+.profile-row a {
+  color: var(--text-primary);
 }
 
 .profile-row img {
