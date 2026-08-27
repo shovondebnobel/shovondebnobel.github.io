@@ -623,6 +623,8 @@ button[type="submit"]:disabled {
 
 .profile-row a {
   color: var(--text-primary);
+  text-decoration: underline;
+  color: #000000;
 }
 
 .profile-row img {
@@ -640,7 +642,8 @@ button[type="submit"]:disabled {
 }
 
 .footer-links a {
-    color: #515154;
+   font-size: var(--text-sm);
+    color: #57B9FF;
     text-decoration: none;
 }
 
