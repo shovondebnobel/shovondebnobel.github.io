@@ -3,22 +3,17 @@
 :root {
   --font-sans: "Inter", "Baloo Da 2", sans-serif;
   --font-heading: "Roboto Slab", serif;
-
   --text-sm: 14px;
   --text-base: 18px;
   --text-lg: 20px;
-
   --heading-xl: 40px;
   --heading-lg: 32px;
   --heading-md: 22px;
-
   --leading-tight: 1.2;
   --leading-body: 1.6;
-
   --color-navy: #000d35;
   --color-navy-alt: #000435;
   --color-accent: #06b6d4;
-
   --bg-page: #ffffff;
   --bg-card: #ffffff;
   --bg-card-alt: #c9e9f6;
@@ -40,7 +35,6 @@
   --color-navy: #e8ecf7;
   --color-navy-alt: #dfe4f0;
   --color-accent: #22d3ee;
-
   --bg-page: #0b1120;
   --bg-card: #131a2c;
   --bg-card-alt: #16233a;
@@ -636,4 +630,25 @@ button[type="submit"]:disabled {
   height: 25px;
   vertical-align: middle;
   margin-right: 4px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #515154;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.separator {
+    color: #d2d2d7;
 }
