@@ -25,6 +25,7 @@
   --text-primary: #000d35;
   --text-body: #333333;
   --text-muted: #888888;
+  --text-link: #57b9ff;
   --input-bg: #f8f9fa;
   --input-border: #e0e0e0;
   --glow-opacity: 0.3;
@@ -105,7 +106,7 @@ p {
 h1,
 h2 {
   font-family: var(--font-heading);
-  font-weight: 700;
+  font-weight: 500;
   background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -616,6 +617,7 @@ button[type="submit"]:disabled {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 14px;
   margin: 10px 0;
   font-size: var(--text-sm);
@@ -623,8 +625,6 @@ button[type="submit"]:disabled {
 
 .profile-row a {
   color: var(--text-primary);
-  text-decoration: underline;
-  color: #000000;
 }
 
 .profile-row img {
@@ -643,7 +643,7 @@ button[type="submit"]:disabled {
 
 .footer-links a {
    font-size: var(--text-sm);
-    color: #57B9FF;
+    color: var(--text-link);
     text-decoration: none;
 }
 
