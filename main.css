@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
-  --font-sans: "Inter Tight", "Baloo Da 2", sans-serif;
+  --font-sans: "Archivo", "Baloo Da 2", sans-serif;
+  --font-backup: "Inter", sans-serif;
   --font-heading: "Roboto Slab", serif;
   --text-sm: 14px;
   --text-base: 18px;
@@ -329,6 +330,7 @@ hr {
   color: var(--text-primary);
 }
 #ipa {
+  font-family: var(--font-backup);
   text-align: center;
   margin: 0 0 15px 0;
   font-size: var(--text-sm);
