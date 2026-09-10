@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     { id: "#title", text: "Shovon Deb Nobel", chars: "upperAndLowerCase" },
     { id: "#ipa", text: "/ʃobʱɔn d̪eb nobel/", chars: "upperAndLowerCase" },
     { id: "#desc-line1", text: "Student", chars: "upperAndLowerCase" },
-    { id: "#desc-line2", text: "Bakalia Government College", chars: "upperAndLowerCase" },
+    { id: "#desc-line2", text: "Bakalia Government College, Chattogram", chars: "upperAndLowerCase" },
     { id: "#desc-line3", text: "Hazi Mohammad Mohsin Government High School", chars: "upperAndLowerCase" },
     { id: "#desc-line4", text: "(2018–2024)", chars: "upperAndLowerCase" }
   ];
@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
         scrambleText: {
           text: t.text,
           chars: t.chars,
-          revealDelay: 0.2,
-          speed: 0.1
+          revealDelay: 0.05,
+          speed: 0.05
         },
         ease: "none"
       }, t.id.includes("tag") ? "-=0.35" : i === 0 ? 0 : "-=0.4");
@@ -111,11 +111,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var contactToggle = document.getElementById('contactToggle');
-  var contactPanel = document.getElementById('contactPanel');
+  var contact = document.getElementById('contact');
 
-  if (contactToggle && contactPanel) {
+  if (contactToggle && contact) {
     contactToggle.addEventListener('click', function () {
-      var isOpen = contactPanel.classList.toggle('open');
+      var isOpen = contact.classList.toggle('open');
       contactToggle.classList.toggle('open');
       contactToggle.setAttribute('aria-expanded', isOpen);
     });
@@ -134,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       onSuccess: function () {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Send again';
-        responseMessage.textContent = 'Your message has been sent.';
+        submitBtn.textContent = 'Send another?';
+        responseMessage.textContent = 'Your message has been sent!';
         responseMessage.className = 'message success show';
         form.reset();
       },
