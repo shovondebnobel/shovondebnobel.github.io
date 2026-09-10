@@ -309,16 +309,7 @@ hr {
   position: relative;
   padding: 12px 20px;
   width: 100%;
-  height: auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-radius: 15px;
-  max-width: 400px;
-  margin: 40px;
-  background: var(--bg-glass);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--border-glass);
+  height: 300px;
 }
 #second-box {
   text-align: center;
@@ -362,6 +353,11 @@ hr {
   justify-content: center;
   align-items: center;
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  background: var(--bg-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-glass);
+  
 }
 
 #about:hover {
