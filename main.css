@@ -152,7 +152,7 @@ b {
 
 .wordmark {
   width: auto;
-  height: 40px;
+  height: 36px;
   display: block;
 }
 
@@ -160,8 +160,8 @@ b {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   border: none;
   background: var(--bg-glass);
@@ -219,9 +219,7 @@ b {
 }
 
 .nav-links a {
-  font-family: var(--font-sans);
   font-weight: 600;
-  color: var(--color-navy);
   text-decoration: none;
   padding: 6px 10px;
   transition: opacity 0.2s ease, color 0.3s ease;
@@ -431,7 +429,7 @@ hr {
   transform: rotate(180deg);
 }
 
-.contact-panel {
+.contact {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, background-color 0.3s ease;
@@ -441,7 +439,7 @@ hr {
   border: none;
 }
 
-.contact-panel.open {
+.contact.open {
   max-height: 800px;
 }
 
