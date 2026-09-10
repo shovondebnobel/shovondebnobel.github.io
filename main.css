@@ -85,7 +85,7 @@ body {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 18px;
   }
 
 h1 {
@@ -309,7 +309,6 @@ hr {
   position: relative;
   padding: 12px 20px;
   width: 100%;
-  height: auto;
 }
 #second-box {
   text-align: center;
@@ -348,7 +347,6 @@ hr {
   max-width: 450px;
   width: 90%;
   margin: 40px auto;
-  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,7 +356,6 @@ hr {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border-glass);
-  
 }
 
 #about:hover {
@@ -393,8 +390,10 @@ hr {
   border: 2px solid #FFF;
 }
 #copyright {
+  font-family: var(--font-backup);
   font-size: var(--text-sm);
-  opacity: 0.6;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
   color: var(--text-body);
 }
 .contact-wrap {
