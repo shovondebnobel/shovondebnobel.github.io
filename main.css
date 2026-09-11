@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
-  --font-sans: "Archivo", "Baloo Da 2", sans-serif;
-  --font-backup: "Inter", sans-serif;
-  --font-heading: "Roboto Slab", serif;
+  --font-sans: "Archivo", "Baloo Da 2", "Inter", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", "Shonar Bangla", "Bangla Sangam MN", "Kohinoor Bangla", "Noto Serif Bengali",  sans-serif;
+  --font-backup: "Inter", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", sans-serif;
+  --font-heading: "Roboto Slab", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Source Serif 4", serif;
   --text-sm: 14px;
   --text-base: 18px;
   --text-lg: 20px;
@@ -15,6 +15,7 @@
   --color-navy: #000d35;
   --color-navy-alt: #000435;
   --color-accent: #06b6d4;
+  --bg-selection: #0096ff;
   --bg-page: #ffffff;
   --bg-card: #ffffff;
   --bg-card-alt: #c9e9f6;
@@ -56,16 +57,19 @@
 
 html, body {
   min-height: 100%;
+  height: auto;
 }
 
 ::-moz-selection {
   color: #ffffff;
-  background: #0096FF;
+  background: var(--bg-selection);
+  border-radius: 5px;
 }
 
 ::selection {
   color: #ffffff;
-  background: #0096FF;
+  background: var(--bg-selection);
+  border-radius: 5px;
 }
 
 body {
@@ -301,7 +305,6 @@ hr {
 }
 #main-box {
   position: relative;
-  padding: 12px 20px;
   width: 100%;
   margin: 10px 12px;
 }
@@ -315,8 +318,7 @@ hr {
   color: var(--text-primary);
   border: none;
   border-radius: 15px;
-  margin: 10px 15px;
-  padding: 15px;
+  margin: 10px;
   width: 300px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -332,8 +334,8 @@ hr {
   margin: 0 0 15px 0;
   font-size: var(--text-sm);
   color: var(--text-muted);
-  margin-left: 5px;
 }
+
 #about {
   box-shadow: 0 0 15px var(--shadow-color);
   text-align: center;
@@ -369,7 +371,7 @@ hr {
   z-index: 1;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px dotted #000000;
+  border: 1px dotted #000;
   border-radius: 5px;
 }
 #logo {
@@ -383,19 +385,22 @@ hr {
   z-index: 2;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
 }
+
 #copyright {
   font-family: var(--font-backup);
   font-size: var(--text-sm);
-  color: var(--text-body);
+  color: var(--text-muted);
 }
+
 .contact-wrap {
-  max-width: 500px;
+  max-width: 450px;
   width: 90%;
   margin: 10px auto 40px auto;
-  border: 1px;
+  box-shadow: 0 0 15px var(--shadow-color);
 }
+
 .contact-toggle {
   width: 100%;
   display: flex;
@@ -434,7 +439,8 @@ hr {
   background: var(--bg-card);
   border-radius: 0 0 15px 20px;
   margin-bottom: 10px;
-  border: 1px;
+  border: 1px #000;
+  box-shadow: 0 0 15px var(--shadow-color);
 }
 
 .contact.open {
