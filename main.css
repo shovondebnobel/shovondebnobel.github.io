@@ -55,7 +55,6 @@
 }
 
 html, body {
-  height: auto;
   min-height: 100%;
 }
 
@@ -86,17 +85,12 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 18px;
-  }
+}
 
 h1 {
   font-size: var(--heading-xl);
   line-height: var(--leading-tight);
   margin: 0;
-}
-section {
-  margin: 2rem 0;
-  padding: 0 1rem;
-  text-align: justify;
 }
 
 h2 {
@@ -309,6 +303,7 @@ hr {
   position: relative;
   padding: 12px 20px;
   width: 100%;
+  margin: 10px 12px;
 }
 #second-box {
   text-align: center;
@@ -320,7 +315,7 @@ hr {
   color: var(--text-primary);
   border: none;
   border-radius: 15px;
-  margin: 15px auto;
+  margin: 10px 15px;
   padding: 15px;
   width: 300px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -346,11 +341,12 @@ hr {
   border-radius: 15px;
   max-width: 450px;
   width: 90%;
-  margin: 40px auto;
+  margin: 10px 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
   background: var(--bg-glass);
   backdrop-filter: blur(10px);
@@ -392,15 +388,13 @@ hr {
 #copyright {
   font-family: var(--font-backup);
   font-size: var(--text-sm);
-  color: var(--text-muted);
-  font-size: var(--text-sm);
   color: var(--text-body);
 }
 .contact-wrap {
   max-width: 500px;
   width: 90%;
   margin: 10px auto 40px auto;
-  border: none;
+  border: 1px;
 }
 .contact-toggle {
   width: 100%;
@@ -440,15 +434,11 @@ hr {
   background: var(--bg-card);
   border-radius: 0 0 15px 20px;
   margin-bottom: 10px;
-  border: none;
+  border: 1px;
 }
 
 .contact.open {
   max-height: 800px;
-}
-
-.container {
-  padding: 25px;
 }
 
 .form-group {
@@ -488,18 +478,6 @@ textarea:focus {
 textarea {
   resize: vertical;
   min-height: 120px;
-}
-
-.honeypot-1 {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 button[type="submit"] {
