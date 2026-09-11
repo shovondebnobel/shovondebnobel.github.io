@@ -58,18 +58,30 @@
 html, body {
   min-height: 100%;
   height: auto;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #000d35;
+  border-radius: 8px;;
 }
 
 ::-moz-selection {
-  color: #ffffff;
+  color: #fff;
   background: var(--bg-selection);
-  border-radius: 5px;
 }
 
 ::selection {
   color: #ffffff;
   background: var(--bg-selection);
-  border-radius: 5px;
 }
 
 body {
@@ -304,7 +316,6 @@ hr {
   border-top: 2px dashed var(--color-navy-alt);
 }
 #main-box {
-  position: absolute;
   width: 100%;
   margin: 10px 12px;
 }
@@ -320,9 +331,8 @@ hr {
   border-radius: 15px;
   margin: 15px auto 5px;
   padding: 15px;
-  width: 300px;
+  width: 100%;
   transition: background-color 0.3s ease, color 0.3s ease;
-  position: absolute;
 }
 #title {
   text-align: center;
@@ -404,6 +414,8 @@ hr {
   box-shadow: 0 0 15px var(--shadow-color);
   overflow: hidden;
   border-radius: 15px;
+  border: 1px solid var(--border-glass);
+  border-bottom: none;
 }
 
 .contact-toggle {
@@ -585,6 +597,7 @@ button[type="submit"]:disabled {
 }
 .email-box {
   display: inline-flex;
+  box-shadow: 0 0 15px var(--shadow-color);
   align-items: center;
   gap: 8px;
   background: var(--bg-glass);
