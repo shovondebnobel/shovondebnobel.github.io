@@ -339,6 +339,7 @@ hr {
 }
 
 #about {
+  position: relative;
   box-shadow: 0 0 15px var(--shadow-color);
   text-align: center;
   background-color: var(--bg-card);
