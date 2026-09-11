@@ -316,6 +316,7 @@ hr {
   border-top: 2px dashed var(--color-navy-alt);
 }
 #main-box {
+  position: relative;
   width: 100%;
   margin: 10px 12px;
 }
@@ -374,6 +375,7 @@ hr {
 }
 
 #cover {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%);
@@ -387,6 +389,7 @@ hr {
   border-radius: 5px;
 }
 #logo {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -20%);
