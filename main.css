@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
-  --font-sans: "Archivo", "Baloo Da 2", "Inter", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", "Shonar Bangla", "Bangla Sangam MN", "Kohinoor Bangla", "Noto Serif Bengali", sans-serif;
-  --font-backup: "Inter", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", sans-serif;
+  --font-sans: Archivo, "Baloo Da 2", Inter, Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", "Shonar Bangla", "Bangla Sangam MN", "Kohinoor Bangla", "Noto Serif Bengali", sans-serif;
+  --font-backup: Inter, Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", sans-serif;
   --font-heading: "Roboto Slab", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Source Serif 4", serif;
   --text-sm: 14px;
-  --text-base: 16px;
+  --text-base: 17px;
   --text-lg: 20px;
   --heading-xl: 36px;
   --heading-lg: 32px;
@@ -32,6 +32,7 @@
   --input-border: #e0e0e0;
   --glow-opacity: 0.3;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --icon-color: #000d35;
   --avatar-size: 5.5rem;
   --avatar-ring: 4px;
 }
@@ -55,6 +56,7 @@
   --input-border: #2a3550;
   --glow-opacity: 0.18;
   --shadow-color: rgba(0, 0, 0, 0.35);
+  --icon-color: #f8f9fa;
 }
 
 html, body {
@@ -386,9 +388,8 @@ hr {
 #title {
   text-align: center;
   margin: 10px 0;
-  font-size: var(--heading-md);
-  color: var(--text-primary);
 }
+
 #ipa {
   font-family: var(--font-backup);
   text-align: center;
@@ -583,6 +584,11 @@ button[type="submit"]:disabled {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+icon {
+  color: var(--icon-color);
+}
+
 #intro-head,
 #intro-main {
   position: relative;
