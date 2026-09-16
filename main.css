@@ -5,9 +5,9 @@
   --font-backup: "Inter", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", sans-serif;
   --font-heading: "Roboto Slab", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Source Serif 4", serif;
   --text-sm: 14px;
-  --text-base: 18px;
+  --text-base: 16px;
   --text-lg: 20px;
-  --heading-xl: 40px;
+  --heading-xl: 36px;
   --heading-lg: 32px;
   --heading-md: 22px;
   --leading-tight: 1.2;
@@ -32,6 +32,8 @@
   --input-border: #e0e0e0;
   --glow-opacity: 0.3;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --avatar-size: 5.5rem;
+  --avatar-ring: 4px;
 }
 
 [data-theme="dark"] {
@@ -320,8 +322,6 @@ hr {
   position: relative;
   width: 100%;
   isolation: isolate;
-  --avatar-size: 5.5rem;
-  --avatar-ring: 4px;
 }
 
 @media (min-width: 480px) {
@@ -341,6 +341,7 @@ hr {
   margin: 0;
   border: none;
   border-radius: 15px 15px 0 0;
+  border: 1px dotted #000;
 }
 
 #logo {
@@ -348,7 +349,7 @@ hr {
   left: 50%;
   bottom: 0;
   top: auto;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 50%);
   width: var(--avatar-size);
   height: var(--avatar-size);
   object-fit: cover;
@@ -373,6 +374,13 @@ hr {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   color: var(--text-primary);
+  border: none;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 }
 
 #title {
