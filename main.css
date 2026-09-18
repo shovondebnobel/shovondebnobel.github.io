@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Anek+Bangla:wght@100..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Anek+Bangla:wght@100..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 :root {
-  --font-sans: Inter, "Anek Bangla", Inter, Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", "Shonar Bangla", "Bangla Sangam MN", "Kohinoor Bangla", "Noto Serif Bengali", sans-serif;
-  --font-backup: Inter, Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", sans-serif;
-  --font-heading: Inter, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Source Serif 4", serif;
+  --font-sans: Inter, "Anek Bangla", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", "Shonar Bangla", "Bangla Sangam MN", "Kohinoor Bangla", "Noto Sans Bengali", sans-serif;
+  --font-heading: Inter, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
+  --font-serif: Merriweather, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
   --text-sm: 14px;
   --text-base: 17px;
   --text-lg: 20px;
@@ -122,14 +122,14 @@ p {
   font-size: var(--text-base);
   line-height: var(--leading-body);
   color: var(--text-body);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h1,
 h2 {
   font-family: var(--font-heading);
-  font-weight: 700;
-  background: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
+  font-weight: 600;
+  background: linear-gradient(290deg, #2cd8d5 0%, #a062ff 30%, #6b8dd6 66%, #8e37d7 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,11 +143,29 @@ h6 {
   font-weight: 600;
   color: var(--text-primary);
 }
+
 i,
 b {
   font-weight: 800;
   margin: 5px;
 }
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.muted {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.note {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: #1f51ff;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -391,7 +409,7 @@ hr {
 }
 
 #ipa {
-  font-family: var(--font-backup);
+  font-family: var(--font-sans);
   text-align: center;
   margin: 0 0 15px 0;
   font-size: var(--text-sm);
@@ -421,12 +439,6 @@ hr {
 
 #about:hover {
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
-}
-
-#copyright {
-  font-family: var(--font-backup);
-  font-size: var(--text-sm);
-  color: var(--text-muted);
 }
 
 .contact-wrap {
