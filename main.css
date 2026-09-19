@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Anek+Bangla:wght@100..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Anek+Bangla:wght@100..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --font-sans: Inter, "Anek Bangla", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", "Shonar Bangla", "Bangla Sangam MN", "Kohinoor Bangla", "Noto Sans Bengali", sans-serif;
-  --font-heading: Inter, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
+  --font-heading: Montserrat, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
   --font-serif: Merriweather, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
   --text-sm: 14px;
   --text-base: 17px;
@@ -152,18 +152,24 @@ b {
 
 .serif {
   font-family: var(--font-serif);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .muted {
   font-family: var(--font-sans);
   font-size: var(--text-sm);
   color: var(--text-muted);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .note {
   font-family: var(--font-sans);
   font-size: var(--text-sm);
   color: #1f51ff;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .navbar {
@@ -186,6 +192,10 @@ b {
   width: auto;
   height: 36px;
   display: block;
+}
+
+[data-theme="dark"] .wordmark {
+  filter: brightness(0) invert(1);
 }
 
 .theme-toggle {
