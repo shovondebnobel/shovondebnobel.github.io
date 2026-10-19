@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Anek+Bangla:wght@100..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Anek+Bangla:wght@100..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
   --font-sans: Inter, "Anek Bangla", Helvetica, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "DejaVu Sans", "Shonar Bangla", "Bangla Sangam MN", "Kohinoor Bangla", "Noto Sans Bengali", sans-serif;
-  --font-heading: Montserrat, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
-  --font-serif: Merriweather, "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
+  --font-heading: "EB Garamond", "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
+  --font-serif: "EB Garamond", "Anek Bangla", "Linux Libertine", Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
   --text-sm: 14px;
   --text-base: 17px;
   --text-lg: 20px;
@@ -611,19 +611,16 @@ button[type="submit"]:disabled {
   color: var(--icon-color);
 }
 
-#intro-head,
-#intro-main {
-  position: relative;
-  z-index: 1;
-}
 .required {
   color: #e74c3c;
 }
+
 .social-icons {
   display: flex;
   gap: 10px;
   margin: 40px 0 10px 0;
 }
+
 .icon-btn {
   display: flex;
   align-items: center;
@@ -643,6 +640,7 @@ button[type="submit"]:disabled {
   transform: translateY(-2px);
   text-decoration: none;
 }
+
 .email-box {
   display: inline-flex;
   box-shadow: 0 0 15px var(--shadow-color);
@@ -675,6 +673,7 @@ button[type="submit"]:disabled {
   display: flex;
   align-items: center;
 }
+
 .profile-row {
   display: flex;
   flex-wrap: wrap;
