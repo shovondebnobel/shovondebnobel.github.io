@@ -2,7 +2,7 @@
 
 :root {
   --font-sans: Inter, Anek Bangla, Helvetica, Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, DejaVu Sans, Shonar Bangla, Bangla Sangam MN, Kohinoor Bangla, Noto Sans Bengali, sans-serif;
-  --font-heading: Exo 2, Anek Bangla, Helvetica, Arial, Noto Serif Bengali, sans-serif;
+  --font-heading: "Exo 2", Anek Bangla, Helvetica, Arial, Noto Serif Bengali, sans-serif;
   --font-serif: EB Garamond, Anek Bangla, Linux Libertine, Georgia, Cambria, Times New Roman, Times, Noto Serif Bengali, serif;
   --text-sm: 14px;
   --text-base: 17px;
@@ -28,6 +28,7 @@
   --text-body: #333333;
   --text-muted: #888888;
   --text-link: #57b9ff;
+  --text-note: #1f51ff;
   --input-bg: #f8f9fa;
   --input-border: #e0e0e0;
   --glow-opacity: 0.3;
@@ -167,7 +168,7 @@ b {
 .note {
   font-family: var(--font-sans);
   font-size: var(--text-sm);
-  color: #1f51ff;
+  color: var(--text-note);
   margin-top: 0;
   margin-bottom: 0;
 }
